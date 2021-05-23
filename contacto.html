@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Infinita</title>
+    <meta name="description" content="Contactanos para consultar sobre nuestros productos de aromaterapia, cosmética y terapias holísticas">
+    <meta name="keywords" content="aromaterapia, cosmetica, terapias holisticas">
+</head>
+<body>
+    
+    <header>
+        <nav class="navegacion" id="navbar-header">
+            <div class="contenedor-header">
+                <a href="#navbar-header" class="navbar-menu-mobile open">
+                    <img src="imagenes/logoloto.png" alt="logoabrir">
+                </a>
+
+                <a href="#" class="navbar-menu-mobile close">
+                    <img src="imagenes/close.png" alt="iconocerrar">
+                </a>
+
+                <p>Menú</p>
+
+            </div>
+
+            <ul class="contenedor-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotras.html">Nosotras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="productos.html">Productos Naturales</a></li>
+                <li><a href="servicios.html">Terapias Holísticas</a></li>
+            </ul>
+        </nav>
+
+        
+        <div class="main__encabezado">
+            <h1>Infinita</h1>
+            <h2>Aromaterapia y Terapias Holísticas</h2>
+        </div>
+    </header>
+
+    <main>
+        <h3>¡Escribinos!</h3>
+        <section class="caja__formulario">
+
+            <div class="foto-contacto">
+                <img src="imagenes/contacto1.jpg" alt="imgcontacto">
+            </div>
+
+            <div id="formulario">
+                <form>
+                    <!--nombre-->
+                    <div class="caja__formulario--item">
+                        <label for="nombre_apellido">Nombre y Apellido:</label>	
+                        <input type="text" name="nombre_apellido" />
+                    </div>
+    
+                    <!--correo electronico-->
+                    <div class="caja__formulario--item">
+                        <label for="correo_electronico">Correo Electrónico:</label>	
+                        <input type="email" name="correo_electronico" placeholder="nombre@correo.com" />    
+                    </div>
+    
+                    <!--celular-->
+                    <div class="caja__formulario--item">
+                        <label for="celular">Celular:</label>	
+                        <input type="text" name="celular"/>
+                    </div>
+    
+                    <!--checkbox-->
+                    <div class="caja__formulario--item">
+                        ¿Desea que nos comuniquemos por Whatsapp?
+                        <input type="checkbox" name="acepta" value="1" />
+                    </div>
+                    
+    
+                    <!--menu desplegable-->
+                    <div class="caja__formulario--item">
+                        <label for="motivo_consulta">¿Cuál es el motivo de tu consulta?</label>
+                        <select name="motivo_consulta">
+                            <option value="aromaterapia">Aromaterapia</option>
+                            <option value="cosmeticanatural">Cosmética Natural</option>
+                            <option value="terapiasholisticas">Terapias Holísticas</option>
+                        </select>
+                    </div>
+                    
+                    <!--mensaje textarea-->
+                    <div class="caja__formulario--item">
+                        <label for="mensaje">Mensaje:</label>	
+                        <textarea rows="4" cols="25"></textarea>
+                    </div>
+                    
+                    <!--boton resetear-->
+                    <div class="caja__formulario--item">
+                        <label for="resetear">¿Desea resetear los campos del formulario?</label>
+                        <input type="reset" value="Resetear">
+                    </div>
+    
+                    <!--boton enviar-->
+                    <div class="caja__formulario--item">
+                        <label for="enviar_formulario">Enviar formulario de contacto</label>
+                        <input type="submit" value="Enviar">
+                    </div>
+                    
+                </form>
+            </div>
+
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__box--navbar">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotras.html">Nosotras</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="productos.html">Productos Naturales</a></li>
+                    <li><a href="servicios.html">Terapias Holísticas</a></li>
+                </ul>
+            </div>
+            <div class=" footer__box--redes">
+                <h3>Nuestras Redes</h3>
+                <div>
+                    <img src="imagenes/whatsapp.png" alt="logowhatsapp">
+                    <img src="imagenes/facebook.png" alt="logofacebook">
+                    <img src="imagenes/instagram.png" alt="logoinstagram">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+<script src="css/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

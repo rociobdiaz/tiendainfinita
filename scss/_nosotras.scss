@@ -1,0 +1,22 @@
+/* COMIENZO PAGINA NOSOTRAS */
+.contenedor-carousel{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.contenedor__parrafo{
+    padding: 10px;
+    p{
+        font-size: 15px;
+    }
+}
+.carousel-size{
+    max-height: 450px;
+    max-width: 350px;
+}
+.carousel-flex{
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+}
+/*FIN PAGINA NOSOTRAS*/

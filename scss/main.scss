@@ -1,0 +1,271 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "extend.scss";
+@import "nosotras.scss";
+@import "contacto.scss";
+@import "productos.scss";
+@import "servicios.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    @include titulos ($text-font, center, 60px);
+    color: black;
+}
+h2{
+    @include titulos ($text-font, center, 30px);
+    color: black;
+}
+h3{
+    @include titulos ($text-font, center, 25px);
+    margin: 20px 0;
+    color: $hotpink;
+    text-transform: uppercase
+}
+h5{
+    @include titulos ($text-font, center, 20px);
+}
+
+p{
+    @include parrafos ($text-font, justify)
+}
+
+a{
+    color: $fuccia;
+    font-family: $text-font;
+    text-decoration: none;
+    font-size: 20px;
+}
+li{
+    font-family: $text-font;
+    list-style-type: none;
+}
+
+img{
+    border-radius: 10px;
+}
+
+
+/* COMIENZO HEADER - MENU */
+
+/*menu*/
+header{
+    background-color: $blanco;
+}
+.contenedor-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    
+    li{
+        margin: 10px;
+    }
+}
+
+.contenedor-header{
+    display: flex;
+    justify-content: right;
+    margin: 10px 10px 10px 10px;
+
+    img{
+        max-width: 50px;
+        padding: 5px;
+        border: 1px solid black;
+    }
+
+    p{
+        font-size: 25px;
+        padding: 5px 25px;
+        margin: 0;
+    }
+}
+
+#navbar-header:target .contenedor-menu{
+    height: 220px;
+}
+
+#navbar-header:target .open{
+    display: none;
+}
+
+#navbar-header:target .close{
+    display: flex;
+}
+
+.close{
+    margin-top: 5px;
+    display: none;
+}
+
+/*header imagen*/
+.main__encabezado{
+    background: url('../imagenes/headerprincipal.jpg');
+    height: 400px;
+    max-width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h1{
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    h2{
+        z-index: 1;
+    }
+}
+
+.main__encabezado::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #F9D3FC;
+    position: absolute;
+    opacity: 0.5;
+}
+
+/*media queries header*/
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            display: none;
+        }
+    }
+
+    .contenedor-menu{
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        width: 60%;
+        align-items: center;
+        margin-bottom: 0;
+
+    } 
+    #navbar-header:target .open{
+        display: flex;
+    }
+    
+    #navbar-header:target .close{
+        display: none;
+    }
+
+    #navbar-header:target .contenedor-menu{
+        height: 80px;
+    }
+    .contenedor-header img{
+        max-height: 50px;
+        max-width: 50px;
+    }  
+}
+/*FIN HEADER - MENU*/
+
+/* COMIENZO FOOTER */
+footer{
+    background: #BB7D96;
+
+    h3{
+        font-size: 20px;
+        color: #fff;
+        padding: 10px 0 0 0;
+    }
+}
+.footer__box--navbar{
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+        font-size: 15px;
+        color: #fff;        
+    }
+}
+
+.footer__box--redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        max-width: 60px;
+        padding: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        h3{
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .footer__box--navbar{
+        ul{
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            padding: 10px;
+        }
+    }
+}
+/*FIN DE FOOTER*/
+
+
+/* COMIENZO INDEX */
+.row__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna__card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: auto;
+    .card{
+        border: 1px solid $lila;
+    }
+    .card-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    @extend .botones;
+}
+
+.columna__carousel{
+    max-width: 80%;
+    margin: 0 0 10px 0;
+
+}
+
+@media (min-width: 768px) {
+    
+    .carousel{
+        display: flex;
+        justify-content: center;
+    }
+}
+/*FIN DEL INDEX*/

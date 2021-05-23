@@ -1,0 +1,22 @@
+/* COMIENZO PAGINA SERVICIOS*/
+.contenedor__servicios{
+    margin: 10px;
+}
+
+.contenedor__servicios--col{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend .contenedor__productos--parrafo;
+}
+
+.contenedor__servicios--img img{
+    max-width: 100%;
+    margin: auto;
+}
+
+.contenedor__servicios--parrafo{
+    padding: 10px;
+}
+/* FIN PAGINA SERVICIOS*/

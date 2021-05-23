@@ -1,0 +1,10 @@
+@mixin parrafos ($text-font, $align){
+    font-family: $text-font;
+    text-align: $align;
+}
+
+@mixin titulos ($text-font, $align, $size){
+    font-family: $text-font;
+    text-align: $align;
+    font-size: $size;
+}
