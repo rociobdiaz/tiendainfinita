@@ -2,26 +2,26 @@
 /* PAGINA PRODUCTOS*/
 .contenedor__productos{
     display: flex;
-    &--imagen{
-        max-width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin: 10px;
-        img{
-            max-width: 90%;
-            max-height: 90%;
-            margin: 5px;
-        }
+}
+.contenedor__productos--imagen{
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+    img{
+        max-width: 90%;
+        max-height: 90%;
+        margin: 5px;
     }
-    &--parrafo{
-        @extend .botones;
-        max-width: 70%;
-        padding: 10px;
-        li{
-        list-style-type: disc;
-        font-family: $text-font;
-        }
+}
+.contenedor__productos--parrafo{
+    @extend .botones;
+    max-width: 70%;
+    padding: 10px;
+    li{
+    list-style-type: disc;
+    font-family: $text-font;
     }
 }
 

@@ -9,7 +9,7 @@
 
 
 h1{
-    @include titulos ($text-font, center, 6rem);
+    @include titulos ($text-font, center, 60px);
     color: black;
 }
 h2{
