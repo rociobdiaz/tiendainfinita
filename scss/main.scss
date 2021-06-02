@@ -7,15 +7,6 @@
 @import "servicios.scss";
 
 
-html {
-    box-sizing: border-box;
-    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
-    scroll-behavior: smooth;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 
 h1{
     @include titulos ($text-font, center, 6rem);
