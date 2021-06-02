@@ -1,7 +1,9 @@
 /* COMIENZO PAGINA SERVICIOS*/
 .contenedor__servicios{
     margin: 10px;
-    &--col{
+    display: flex;
+    justify-content: center;
+    &--col{ 
         margin-bottom: 15px;
         display: flex;
         flex-direction: column;
