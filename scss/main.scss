@@ -7,14 +7,18 @@
 @import "servicios.scss";
 
 
-*{
-    margin: 0;
-    padding: 0;
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+    scroll-behavior: smooth;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 h1{
-    @include titulos ($text-font, center, 60px);
+    @include titulos ($text-font, center, 6rem);
     color: black;
 }
 h2{
@@ -137,6 +141,10 @@ header{
     opacity: 0.5;
 }
 
+.navbar-menu-desktop{
+    display: none;
+}
+
 /*media queries header*/
 @media (min-width: 768px) {
     .navegacion{
@@ -173,6 +181,12 @@ header{
         max-height: 50px;
         max-width: 50px;
     }  
+    .navbar-menu-mobile{
+        display: none;
+    }
+    .navbar-menu-desktop{
+        display: block;
+    }
 }
 /*FIN HEADER - MENU*/
 
@@ -204,7 +218,7 @@ footer{
     align-items: center;
 
     img{
-        max-width: 60px;
+        max-width: 6rem;
         padding: 10px;
     }
 }
