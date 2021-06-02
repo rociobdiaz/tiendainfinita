@@ -4,6 +4,15 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    &--item{
+        padding: 10px;
+        font-size: 15px;
+        font-family: $text-font;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 #formulario{
@@ -17,14 +26,6 @@
     margin-left: 50px;
 }
 
-.caja__formulario--item{
-    padding: 10px;
-    font-size: 15px;
-    font-family: $text-font;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .foto-contacto img{
     max-width: 400px;
