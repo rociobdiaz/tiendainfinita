@@ -256,6 +256,8 @@ header {
     width: 69%;
     align-items: center;
     margin-bottom: 0; }
+    .contenedor-menu li {
+      text-align: center; }
   #navbar-header:target .open {
     display: flex; }
   #navbar-header:target .close {
@@ -272,7 +274,9 @@ header {
 
 @media (min-width: 1200px) {
   .contenedor-menu {
-    width: 40%; } }
+    width: 45%; }
+    .contenedor-menu li {
+      text-align: center; } }
 
 /*FIN HEADER - MENU*/
 /* COMIENZO FOOTER */

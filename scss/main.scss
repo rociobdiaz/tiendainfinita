@@ -155,6 +155,9 @@ header{
         width: 69%;
         align-items: center;
         margin-bottom: 0;
+        li{
+            text-align: center;
+        }
     } 
     #navbar-header:target .open{
         display: flex;
@@ -180,7 +183,10 @@ header{
 }
 @media (min-width: 1200px) {
     .contenedor-menu{
-        width: 40%;
+        width: 45%;
+        li{
+            text-align: center;
+        }
     } 
 }
 /*FIN HEADER - MENU*/
