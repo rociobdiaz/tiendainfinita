@@ -351,3 +351,13 @@ footer {
     justify-content: center; } }
 
 /*FIN DEL INDEX*/
+/* 404 NOT FOUND PAGE*/
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .not-found img {
+    max-width: 300px;
+    margin: 50px; }
+
+/* FIN PAGINA 404*/
