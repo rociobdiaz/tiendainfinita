@@ -4,27 +4,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.contenedor__productos--imagen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    img{
-        max-width: 220px;
-        max-height: 80%;
-        margin: 5px;
+    &--imagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        img{
+            max-width: 13.7rem;
+            max-height: 80%;
+            margin: 5px;
+        }
+    }
+    &--parrafo{
+        @extend .botones;
+        max-width: 70%;
+        padding: 10px;
+        li{
+        list-style-type: disc;
+        font-family: $text-font;
+        }
     }
 }
-.contenedor__productos--parrafo{
-    @extend .botones;
-    max-width: 70%;
-    padding: 10px;
-    li{
-    list-style-type: disc;
-    font-family: $text-font;
-    }
-}
+
+
 
 .seccion__productos--primera{
     padding: 25px 10px;
