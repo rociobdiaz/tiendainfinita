@@ -27,7 +27,7 @@ h5{
 }
 
 p{
-    @include parrafos ($text-font, justify)
+    @include parrafos ($text-font, left)
 }
 
 a{
